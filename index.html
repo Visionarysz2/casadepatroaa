@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Casa de Patroa</title>
+  <title>Casa de Patroa - Radar dos Achados</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       color: white;
       text-align: center;
       position: relative;
@@ -19,7 +19,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('background.jpg'); /* 🔁 SUA IMAGEM DE FUNDO */
+      background-image: url('background.jpg'); /* 🔁 Sua imagem de fundo */
       background-size: cover;
       background-position: center;
       z-index: 0;
@@ -48,14 +48,10 @@
       font-size: 14px;
     }
 
-    .main {
-      padding: 20px;
-    }
-
     .promo-text {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: bold;
-      margin-top: 20px;
+      margin-top: 25px;
     }
 
     .description {
@@ -70,10 +66,10 @@
     }
 
     .borogodo-img {
-      width: 300px;
+      width: 280px;
       height: auto;
       border: 5px solid #fff;
-      border-radius: 10px;
+      border-radius: 12px;
       margin-bottom: 10px;
     }
 
@@ -88,7 +84,6 @@
       border-radius: 20px;
       font-weight: bold;
       font-size: 14px;
-      white-space: nowrap;
       text-decoration: none;
     }
 
@@ -99,7 +94,6 @@
     .below-text {
       font-size: 14px;
       font-weight: bold;
-      color: white;
       margin: 10px 0 20px;
     }
 
@@ -118,37 +112,61 @@
       background-color: #25d366;
       color: white;
       font-weight: bold;
-      padding: 15px 20px;
-      border-radius: 30px;
+      padding: 15px 25px;
+      border-radius: 50px;
       text-decoration: none;
       font-size: 16px;
       margin-bottom: 30px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .whatsapp-button img {
       vertical-align: middle;
       margin-right: 10px;
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
     }
 
-    /* NOVO BLOCO DE BENEFÍCIOS */
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+      transform: scale(1.05);
+    }
+
+    /* NOVO BLOCO DESTAQUES */
     .benefits {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
-      margin-top: 20px;
+      gap: 20px;
+      margin-top: 10px;
     }
 
     .benefit {
-      background-color: rgba(255, 255, 255, 0.1);
+      background: rgba(255,255,255,0.1);
       border: 1px solid rgba(255,255,255,0.2);
-      padding: 12px 20px;
-      border-radius: 30px;
-      font-size: 14px;
+      padding: 20px;
+      width: 180px;
+      border-radius: 15px;
+      text-align: center;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .benefit:hover {
+      transform: scale(1.05);
+    }
+
+    .benefit-icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .benefit-text {
+      font-size: 15px;
+      font-weight: bold;
       color: #fff;
-      font-weight: 500;
     }
 
     @media (max-width: 600px) {
@@ -171,8 +189,7 @@
       }
 
       .benefit {
-        font-size: 13px;
-        padding: 10px 16px;
+        width: 80%;
       }
     }
   </style>
@@ -186,39 +203,48 @@
       APROVEITE AGORA AS MELHORES PROMOÇÕES DE 2025 DA SHOPEE!
     </div>
 
-    <div class="main">
-      <div class="promo-text">
-        GRUPO VIP DE CUPONS, SALDÕES E ACHADINHOS DA SHOPEE EM PROMOÇÃO✨🛍️
+    <div class="promo-text">
+      GRUPO VIP DE CUPONS, SALDÕES E ACHADINHOS DA SHOPEE EM PROMOÇÃO ✨🛍️
+    </div>
+
+    <div class="description">
+      Entre para o radar de descontos
+    </div>
+
+    <div class="image-container">
+      <img src="icon.jpeg" alt="Achadinhos Borogodó" class="borogodo-img">
+      <a href="https://www.instagram.com/casadepatroaa/" target="_blank" class="username-overlay">@casadepatroaa</a>
+    </div>
+
+    <div class="below-text">radar de descontos</div>
+
+    <div class="cta-text">
+      Transforme seu <strong>2025</strong> pagando <em>muito barato</em> nos produtos que precisa <strong>para sua casa!</strong>
+    </div>
+
+    <a class="whatsapp-button" href="https://chat.whatsapp.com/KQjf968Yno61VPscbUbABp" target="_blank">
+      <img src="zap.png" alt="WhatsApp">
+      QUERO PARTICIPAR AGORA!
+    </a>
+
+    <!-- DESTAQUES ESTILIZADOS -->
+    <div class="benefits">
+      <div class="benefit">
+        <span class="benefit-icon">🛒</span>
+        <div class="benefit-text">Descontos Reais</div>
       </div>
-
-      <div class="description">
-        Entre para o radar de descontos
+      <div class="benefit">
+        <span class="benefit-icon">💡</span>
+        <div class="benefit-text">Dicas Inteligentes</div>
       </div>
-
-      <div class="image-container">
-        <img src="icon.jpeg" alt="Achadinhos Borogodó" class="borogodo-img">
-        <a href="https://www.instagram.com/casadepatroaa/" target="_blank" class="username-overlay">@casadepatroaa</a>
+      <div class="benefit">
+        <span class="benefit-icon">📦</span>
+        <div class="benefit-text">Achados Diários</div>
       </div>
-
-      <div class="below-text">radar de descontos</div>
-
-      <div class="cta-text">
-        Transforme seu <strong>2025</strong> pagando <em>muito barato</em> nos produtos que precisa <strong>para sua casa!</strong>
+      <div class="benefit">
+        <span class="benefit-icon">🎯</span>
+        <div class="benefit-text">Curadoria Especial</div>
       </div>
-
-      <a class="whatsapp-button" href="https://chat.whatsapp.com/KQjf968Yno61VPscbUbABp?fbclid=PAZXh0bgNhZW0CMTEAAafqET15hAQnIfWLVHtOBKJi_yEsV1Y-p4quALRcOinFk3R-QRmcdcsBsbyHmA_aem_NZTHN0I4MePs0gHxfWZ1qw" target="_blank">
-        <img src="zap.png" alt="WhatsApp">
-        QUERO PARTICIPAR AGORA!
-      </a>
-
-      <!-- BENEFÍCIOS ABAIXO DO BOTÃO -->
-      <div class="benefits">
-        <div class="benefit">🛒 Descontos Reais</div>
-        <div class="benefit">💡 Dicas Inteligentes</div>
-        <div class="benefit">📦 Achados Diários</div>
-        <div class="benefit">🎯 Curadoria Especial</div>
-      </div>
-
     </div>
   </div>
 </body>
